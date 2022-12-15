@@ -1,0 +1,31 @@
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+	int a, b, temp;
+cout << "Enter first number: ";
+	cin >> a;
+	cout << "enter second number: ";
+	cin >> b;
+	cout << "Prime numbers : ";
+
+	for (int i = a; i <= b; i++) {
+	
+ 		if (i == 1 || i == 0)
+			continue;
+	temp = 1;
+for (int j = 2; j <= i/2; ++j) {
+			if (i % j == 0) {
+				temp = 0;
+				break;
+			}
+		}
+             if (temp == 1)
+			cout << i << " ";
+	}
+}
+
